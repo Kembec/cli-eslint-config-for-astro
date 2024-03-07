@@ -1,0 +1,49 @@
+{
+	"name": "@kembec/cli-eslint-config-for-astro",
+	"version": "1.0.0",
+	"description": "A CLI tool for effortlessly setting up ESLint + Prettier configurations in JS projects, supporting frameworks like Vue, React, and Svelte.",
+	"type": "module",
+	"bin": {
+		"cli-eslint-astro": "./bin/cli.js"
+	},
+	"scripts": {
+		"start": "node ./bin/cli.js",
+		"prettier": "prettier --write",
+		"lint": "eslint --ext .js .",
+		"lint:fix": "eslint --ext .js . --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Kembec/cli-eslint-config-for-astro.git"
+	},
+	"keywords": [
+		"CLI",
+		"typescript",
+		"eslint",
+		"lint",
+		"prettier",
+		"astro",
+		"vue",
+		"vue3",
+		"kembec"
+	],
+	"author": "Kembec.com",
+	"license": "AGPL-3.0 license",
+	"bugs": {
+		"url": "https://github.com/Kembec/cli-eslint-config-for-astro.git/issues"
+	},
+	"homepage": "https://github.com/Kembec/cli-eslint-config-for-astro.git#readme",
+	"dependencies": {
+		"commander": "^12.0.0",
+		"fs-extra": "^11.2.0",
+		"inquirer": "^9.2.15",
+		"prettier": "^3.2.5",
+		"shelljs": "^0.8.5"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@kembec/eslint-config": "^1.1.2"
+	}
+}
