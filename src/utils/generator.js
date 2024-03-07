@@ -21,5 +21,4 @@ export function installDependencies({ devDependencies }, projectPath, packageMan
 	}[packageManager];
 
 	execSync(command, { cwd: absolutePath, stdio: "inherit" });
-	execSync(`${packageManager} run prettier ${absolutePath}`);
 }
