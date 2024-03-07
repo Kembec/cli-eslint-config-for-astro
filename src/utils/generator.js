@@ -15,7 +15,6 @@ export function installDependencies({ dependencies, devDependencies }, projectPa
 	}
 
 	if (dependencies.length > 0) {
-		console.log(dependencies);
 		execInstallDependencies(dependencies, packageManager, absolutePath);
 	}
 	if (devDependencies.length > 0) {

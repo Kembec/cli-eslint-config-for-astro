@@ -61,6 +61,9 @@ export async function setupProject(options) {
 			{
 				files: ["*.ts", "*.tsx"],
 				parser: "@typescript-eslint/parser",
+				parserOptions: {
+					project: "./tsconfig.json",
+				},
 			},
 		],
 		plugins: ["astro"],
