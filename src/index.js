@@ -72,6 +72,7 @@ export async function setupProject(options) {
 	};
 
 	const dependencies = {
+		dependencies: [],
 		devDependencies: [
 			"@kembec/eslint-config",
 			"@typescript-eslint/eslint-plugin",
@@ -84,6 +85,8 @@ export async function setupProject(options) {
 			"astro-eslint-parser",
 		],
 	};
+
+	console.log(answers.frameworks);
 
 	if (answers.frameworks.includes("vue")) {
 		setupVue(eslintConfig, dependencies);

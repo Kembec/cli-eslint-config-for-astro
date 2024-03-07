@@ -10,5 +10,6 @@ export function setupVue(eslintConfig, dependencies) {
 		},
 	});
 
-	dependencies.devDependencies.push("eslint-plugin-vue", "@astrojs/vue", "vue");
+	dependencies.dependencies.push("@astrojs/vue", "vue");
+	dependencies.devDependencies.push("eslint-plugin-vue");
 }
