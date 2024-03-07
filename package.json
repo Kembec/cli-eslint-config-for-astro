@@ -1,6 +1,6 @@
 {
 	"name": "@kembec/cli-eslint-config-for-astro",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "A CLI tool for effortlessly setting up ESLint + Prettier configurations in TS projects, supporting frameworks like Vue, React, and Svelte.",
 	"type": "module",
 	"bin": {
