@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CURRENT_BRANCH=$(git branch --show-current)
+
+if [ "$CURRENT_BRANCH" = "main" ]; then
+    ncu -u
+    NEW_VERSION=$(pnpm version patch) 
+    sed -i '' "s/version: '.*'/version: '$NEW_VERSION'/" ./bin/cli.js
+    echo "Version updated to $NEW_VERSION"
+else
+    echo "Not on main branch, version not updated."
+fi

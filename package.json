@@ -10,7 +10,8 @@
 		"start": "node ./bin/cli.js",
 		"prettier": "prettier --write",
 		"lint": "eslint --ext .js .",
-		"lint:fix": "eslint --ext .js . --fix"
+		"lint:fix": "eslint --ext .js . --fix",
+		"prepare": "husky"
 	},
 	"repository": {
 		"type": "git",
@@ -43,6 +44,7 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"@kembec/eslint-config": "^1.1.2"
+		"@kembec/eslint-config": "^1.1.2",
+		"husky": "^9.0.11"
 	}
 }
