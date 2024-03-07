@@ -89,8 +89,6 @@ export async function setupProject(options) {
 		],
 	};
 
-	console.log(answers.frameworks);
-
 	if (answers.frameworks.includes("vue")) {
 		setupVue(eslintConfig, dependencies);
 	}
