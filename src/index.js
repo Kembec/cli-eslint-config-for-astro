@@ -84,7 +84,7 @@ export async function setupProject(options) {
 			"eslint-plugin-astro",
 			"prettier-plugin-astro",
 			"prettier",
-			"eslint",
+			"eslint@^8.0.0",
 			"astro-eslint-parser",
 		],
 	};
